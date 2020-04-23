@@ -1,4 +1,4 @@
-package com.sanchez.irving.inventory.inventory;
+package com.sanchez.irving.inventory;
 
 public class InventoryBean {
 	private int ID;
