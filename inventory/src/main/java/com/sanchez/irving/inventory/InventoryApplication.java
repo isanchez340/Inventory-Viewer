@@ -1,4 +1,4 @@
-package com.sanchez.irving.inventory.inventory;
+package com.sanchez.irving.inventory;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
