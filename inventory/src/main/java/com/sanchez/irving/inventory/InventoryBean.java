@@ -1,79 +1,132 @@
 package com.sanchez.irving.inventory;
 
 public class InventoryBean {
-	private int ID;
-	private String Name;
-	private String Size;
-	private double price;
-	private String Description;
+	private String id;
+	private String name;
+	private String description;
+	private String size;
+	private String price;
+	private String barcode;
+	private String department;
+	private String quantity;
 	/**
-	 * @return the iD
+	 * @return the id
 	 */
-	public int getID() {
-		return ID;
+	public String getId() {
+		return id;
 	}
 	/**
-	 * @param iD the iD to set
+	 * @param id the id to set
 	 */
-	public void setID(int iD) {
-		ID = iD;
+	public void setId(String id) {
+		this.id = id;
 	}
 	/**
 	 * @return the name
 	 */
 	public String getName() {
-		return Name;
+		return name;
 	}
 	/**
 	 * @param name the name to set
 	 */
 	public void setName(String name) {
-		Name = name;
-	}
-	/**
-	 * @return the size
-	 */
-	public String getSize() {
-		return Size;
-	}
-	/**
-	 * @param size the size to set
-	 */
-	public void setSize(String size) {
-		Size = size;
-	}
-	/**
-	 * @return the price
-	 */
-	public double getPrice() {
-		return price;
-	}
-	/**
-	 * @param price the price to set
-	 */
-	public void setPrice(double price) {
-		this.price = price;
+		this.name = name;
 	}
 	/**
 	 * @return the description
 	 */
 	public String getDescription() {
-		return Description;
+		return description;
 	}
 	/**
 	 * @param description the description to set
 	 */
 	public void setDescription(String description) {
-		Description = description;
+		this.description = description;
 	}
-	public InventoryBean(int iD, String name, String size, double price, String description) {
-		super();
-		ID = iD;
-		Name = name;
-		Size = size;
+	/**
+	 * @return the size
+	 */
+	public String getSize() {
+		return size;
+	}
+	/**
+	 * @param size the size to set
+	 */
+	public void setSize(String size) {
+		this.size = size;
+	}
+	/**
+	 * @return the price
+	 */
+	public String getPrice() {
+		return price;
+	}
+	/**
+	 * @param price the price to set
+	 */
+	public void setPrice(String price) {
 		this.price = price;
-		Description = description;
 	}
-	
+	/**
+	 * @return the barcode
+	 */
+	public String getBarcode() {
+		return barcode;
+	}
+	/**
+	 * @param barcode the barcode to set
+	 */
+	public void setBarcode(String barcode) {
+		this.barcode = barcode;
+	}
+	/**
+	 * @return the department
+	 */
+	public String getDepartment() {
+		return department;
+	}
+	/**
+	 * @param department the department to set
+	 */
+	public void setDepartment(String department) {
+		this.department = department;
+	}
+	/**
+	 * @return the quantity
+	 */
+	public String getQuantity() {
+		return quantity;
+	}
+	/**
+	 * @param quantity the quantity to set
+	 */
+	public void setQuantity(String quantity) {
+		this.quantity = quantity;
+	}
+	/**
+	 * @param id
+	 * @param name
+	 * @param description
+	 * @param size
+	 * @param price
+	 * @param barcode
+	 * @param department
+	 * @param quantity
+	 */
+	public InventoryBean(String id, String name, String description, String size, String price, String barcode,
+			String department, String quantity) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.size = size;
+		this.price = price;
+		this.barcode = barcode;
+		this.department = department;
+		this.quantity = quantity;
+	}
+
 	
 }
